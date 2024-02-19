@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://10.214.183.38:3000",
+  "proxy": "https://back-end-7h65.onrender.com:3000",
   
   "dependencies": {
     "@emotion/react": "^11.10.5",

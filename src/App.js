@@ -17,7 +17,7 @@ function App() {
   const { loginData, setLoginData } = useContext(LoginContext);
   const DashboardValid = async () => {
     let token = localStorage.getItem("usersdatatoken");
-    const res = await fetch("/validuser", {
+    const res = await fetch(`${process.env.URL}/validuser`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

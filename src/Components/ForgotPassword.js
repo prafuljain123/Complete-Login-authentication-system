@@ -12,7 +12,7 @@ const ForgotPassword = () => {
   const [dataa, setData] = useState(false);
 
   const userValid = async () => {
-    const res = await fetch(`/forgotpassword/${id}/${token}`, { 
+    const res = await fetch(`${process.env.URL}/forgotpassword/${id}/${token}`, { 
       method: "GET",
       headers: {
         "Content-Type": "application/json",

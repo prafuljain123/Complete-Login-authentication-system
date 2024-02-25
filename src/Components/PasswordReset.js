@@ -25,7 +25,7 @@ const PasswordReset = () => {
           });
         }else{
 
-          const res = await fetch("/sendpasswordlink",{
+          const res = await fetch(`${process.env.URL}/sendpasswordlink`,{
             method : "POST",
             headers : {
                 "Content-Type" : "application/json"

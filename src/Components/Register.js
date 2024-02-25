@@ -62,7 +62,7 @@ const Register = () => {
         position:"top-center"
       });
     } else {
-      const data = await fetch("/register", {
+      const data = await fetch(`${process.env.URL}/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

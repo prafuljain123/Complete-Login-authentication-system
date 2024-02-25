@@ -26,7 +26,7 @@ const goDashboard =()=>{
 }
 const logOut = async() => {
    let token = localStorage.getItem("usersdatatoken");
-        const res = await fetch("/logout",{
+        const res = await fetch(`${process.env.URL}/logout`,{
             method : "GET",
             headers : {
                 "Content-Type" : "application/json",

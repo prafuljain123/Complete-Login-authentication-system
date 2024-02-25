@@ -43,7 +43,7 @@ const Login = () => {
       });
     } else {
 
-      const data = await fetch("/login", {
+      const data = await fetch(`${process.env.URL}/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
